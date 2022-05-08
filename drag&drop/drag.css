@@ -1,0 +1,32 @@
+body {
+    background: #c0a79fd5;
+  }
+  
+  .fill {
+    background-image: url('./drag.jpg');
+    position: relative;
+    height: 150px;
+    width: 150px;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+  }
+  
+  .hold {
+    border: solid 5px #ccc;
+  }
+  
+  .empty {
+    display: inline-block;
+    height: 160px;
+    width: 160px;
+    margin: 10px;
+    border: solid 3px #c0a79fd5;
+    background: white;
+  }
+  
+  .hovered {
+    background: #758db9;
+    border-style: dashed;
+  }
+  
