@@ -3,6 +3,7 @@
     width: 50px;
     position: absolute;
     background-color: #04e79cf6;
+    border: 1px solid #04e79cf6;
 }
 
 .resizer {
@@ -11,6 +12,7 @@
     height: 10px;
     border-radius: 5p;
     background-color: #fff;
+    border: 1px solid #04e79cf6;
     z-index: 2;
 }
 
