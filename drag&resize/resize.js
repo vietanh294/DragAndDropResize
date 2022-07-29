@@ -62,10 +62,24 @@ for (let resizer of resizers) {
         el.style.width = rect.width - (prevX - e.clientX) + "px";
         el.style.height = rect.height + (prevY - e.clientY) + "px";
         el.style.top = rect.top - (prevY - e.clientY) + "px";
-      } else {
+      } else if (currentResizer.classList.contains("nw")) {
         el.style.width = rect.width + (prevX - e.clientX) + "px";
         el.style.height = rect.height + (prevY - e.clientY) + "px";
         el.style.top = rect.top - (prevY - e.clientY) + "px";
+        el.style.left = rect.left - (prevX - e.clientX) + "px";
+      }
+      else if (currentResizer.classList.contains("cn")) {
+        el.style.height = rect.height + (prevY - e.clientY) + "px";
+        el.style.top = rect.top - (prevY - e.clientY) + "px";
+      }
+      else if (currentResizer.classList.contains("ce")) {
+        el.style.width = rect.width - (prevX - e.clientX) + "px";
+      }
+      else if (currentResizer.classList.contains("cs")) {
+        el.style.height = rect.height - (prevY - e.clientY) + "px";
+      }
+      else if (currentResizer.classList.contains("cw")) {
+        el.style.width = rect.width + (prevX - e.clientX) + "px";
         el.style.left = rect.left - (prevX - e.clientX) + "px";
       }
 
