@@ -39,3 +39,28 @@
     right: -1px;
     cursor: se-resize;
 }
+
+
+.resizer.cn{
+    top: -1px;
+    left: calc(50% - 5px);
+    cursor: n-resize;
+}
+
+.resizer.ce {
+    top: calc(50% - 5px);
+    right: -1px;
+    cursor: e-resize;
+}
+
+.resizer.cs{
+    bottom: -1px;
+    left: calc(50% - 5px);
+    cursor: s-resize;
+}
+
+.resizer.cw {
+    bottom: calc(50% - 5px);
+    left: -1px;
+    cursor: w-resize;
+}
